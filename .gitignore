@@ -2,4 +2,5 @@
 .DS_Store
 
 mage/var/
+mage/app/etc/local.xml
 data/

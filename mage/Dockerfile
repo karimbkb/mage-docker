@@ -10,7 +10,8 @@ RUN yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
 
 RUN yum-config-manager --enable remi-php70 && \
    yum -y install php php-xml php-pcre php-spl php-pdo php-mysql php-mcrypt php-gd \
-   php-mbstring php-openssl php-json php-curl php-dom php-iconv php-simplexml php-fpm
+   php-mbstring php-openssl php-json php-curl php-dom php-iconv php-simplexml php-fpm \
+   php-soap
 
 RUN cd /tmp && \
    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
